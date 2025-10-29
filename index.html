@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiLashes - Extensão de Cílios e Sobrancelhas</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <img src="Logo Nova Branca.png" alt="Logo MiLashes">
+    <span>MiLashes</span>
+  </div>
+
+  <nav>
+    <div class="menu-btn" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#" data-bs-toggle="offcanvas" data-bs-target="#loginOffcanvas">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="slides">
+    <img src="Volume Brasileiro.jpeg" alt="Extensão de cílios">
+    <img src="Volume Russo.jpeg" alt="Design de sobrancelhas">
+    <img src="Cliente.jpeg" alt="Estúdio MiLashes">
+  </div>
+
+  <div class="overlay">
+    <h1>Realce sua beleza natural</h1>
+    <p>Transforme seu olhar em poucos minutos</p>
+    <a href="https://wa.me/5521998691535" target="_blank" class="cta-btn">Agende Agora</a>
+  </div>
+
+  <button class="btn prev" onclick="prevSlide()">&#10094;</button>
+  <button class="btn next" onclick="nextSlide()">&#10095;</button>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <h2>Sobre a MiLashes</h2>
+  <p>
+    A <strong>MiLashes</strong> é especializada em realçar a beleza natural com técnicas de extensão de cílios,
+    design e henna para sobrancelhas. Atendimento personalizado, conforto e resultados naturais garantidos.
+  </p>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="services">
+    <div class="card">
+      <img src="img/servico1.jpg" alt="Extensão de cílios">
+      <h3>Extensão de Cílios</h3>
+      <p>Alongamento fio a fio que valoriza o olhar de forma natural.</p>
+      <p class="price">R$ 150,00</p>
+      <p class="diferencial">Técnica segura, hipoalergênica e personalizada</p>
+    </div>
+    <div class="card">
+      <img src="img/servico2.jpg" alt="Design de sobrancelhas">
+      <h3>Design de Sobrancelhas</h3>
+      <p>Modelagem perfeita para o seu rosto.</p>
+      <p class="price">R$ 80,00</p>
+      <p class="diferencial">Inclui análise do formato e simetria ideal</p>
+    </div>
+    <div class="card">
+      <img src="img/servico3.jpg" alt="Henna de sobrancelhas">
+      <h3>Henna</h3>
+      <p>Preenchimento temporário que define as sobrancelhas.</p>
+      <p class="price">R$ 60,00</p>
+      <p class="diferencial">Aspecto natural e duradouro</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <h2>Galeria Antes e Depois</h2>
+  <div class="gallery">
+    <img src="img/galeria1.jpg" alt="Antes e depois cílios">
+    <img src="img/galeria2.jpg" alt="Resultado extensão">
+    <img src="img/galeria3.jpg" alt="Sobrancelhas perfeitas">
+    <img src="img/galeria4.jpg" alt="Ambiente do estúdio">
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos">
+  <h2>Depoimentos</h2>
+  <div class="testimonials">
+    <div class="testimonial active">
+      <p>"Amei o atendimento! Meus cílios ficaram perfeitos e super naturais."</p>
+      <span>- Camila Souza</span>
+    </div>
+    <div class="testimonial">
+      <p>"Profissional incrível! Ambiente aconchegante e resultado maravilhoso."</p>
+      <span>- Mariana Lima</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <p>Agende seu horário e venha realçar sua beleza com a MiLashes!</p>
+    <div class="contact">
+      <a href="https://wa.me/5521998691535" target="_blank">Agendar pelo WhatsApp</a>
+      <a href="https://www.instagram.com/milashesrj/" target="_blank">Visitar Instagram</a>
+      <a href="mailto:felipevitorino294@gmail.com?subject=Agendamento MiLashes">Enviar E-mail</a>
+    </div>
+    <div class="social-links">
+      <a href="https://wa.me/5521998691535" target="_blank" class="social-link"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" target="_blank" class="social-link"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/milashesrj/" target="_blank" class="social-link"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 MiLashes. Todos os direitos reservados.</p>
+</footer>
+
+<!-- BOTÃO FIXO WHATSAPP -->
+<a href="https://wa.me/5521998691535" target="_blank" class="whatsapp-btn">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SCRIPT PERSONALIZADO -->
+<script>
+  // Carrossel Hero
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slides img').length;
+  let index = 0;
+
+  function showSlide() {
+    slides.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide();
+  }
+
+  setInterval(nextSlide, 5000);
+
+  // Menu responsivo
+  function toggleMenu() {
+    document.querySelector('nav').classList.toggle('active');
+  }
+
+  // Depoimentos automáticos
+  const testimonials = document.querySelectorAll('.testimonial');
+  let tIndex = 0;
+  function showTestimonial() {
+    testimonials.forEach(t => t.classList.remove('active'));
+    testimonials[tIndex].classList.add('active');
+    tIndex = (tIndex + 1) % testimonials.length;
+  }
+  setInterval(showTestimonial, 4000);
+</script>
+
+<!-- OFFCANVAS LOGIN -->
+<div class="offcanvas offcanvas-end" id="loginOffcanvas" tabindex="-1">
+  <div class="offcanvas-header bg-primary text-light">
+    <h5 class="offcanvas-title">Login</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <form>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="Digite seu email">
+      </div>
+
+      <div class="mb-4">
+        <label for="passwordInput" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="passwordInput" placeholder="Digite sua senha">
+      </div>
+
+      <!-- Botão principal -->
+      <button type="submit" class="btn btn-rosa w-100">Entrar</button>
+    </form>
+
+    <!-- Separação -->
+    <div class="divider my-4"></div>
+
+    <div class="text-center">
+      <p class="mb-3">Ainda não tem conta?</p>
+      <button class="btn btn-rosa-outline w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#cadastro">
+        Cadastre-se
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- OFFCANVAS CADASTRO -->
+<div class="offcanvas offcanvas-end" id="cadastro" tabindex="-1">
+  <div class="offcanvas-header bg-primary text-light">
+    <h5 class="offcanvas-title">Cadastre-se</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <form>
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Digite seu nome">
+      </div>
+
+      <div class="mb-3">
+        <label for="emailRegInput" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailRegInput" placeholder="Digite seu email">
+      </div>
+
+      <div class="mb-4">
+        <label for="passwordRegInput" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="passwordRegInput" placeholder="Digite sua senha">
+      </div>
+
+      <!-- Botão principal -->
+      <button type="submit" class="btn btn-rosa w-100">Cadastrar</button>
+    </form>
+
+    <!-- Separação -->
+    <div class="divider my-4"></div>
+
+    <div class="text-center">
+      <p class="mb-3">Já possui uma conta?</p>
+      <button class="btn btn-rosa-outline w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#loginOffcanvas">
+        Fazer Login
+      </button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
